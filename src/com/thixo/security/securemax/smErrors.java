@@ -2,16 +2,11 @@ package com.thixo.security.securemax;
 
 /**
  * <p>Title: Squid Security Systems</p>
- *
- * <p>Description: Ultimate Java Security for ColdFusion</p>
- *
- * <p>Copyright: Copyright (c) 2005</p>
- *
  * @author Jeff L Greenwell
  * @version 1.0
  */
 
-import com.recruitmax.security.securemax.v1_0.smErrorElement;
+import com.thixo.security.securemax.smErrorElement;
 import java.util.ArrayList;
 
 public class smErrors {

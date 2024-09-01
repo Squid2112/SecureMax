@@ -1,13 +1,7 @@
-package com.recruitmax.security.securemax.v1_0;
+package com.thixo.security.securemax;
 
 /**
  * <p>Title: Squid Security Systems</p>
- *
- * <p>Description: Ultimate Java Security for ColdFusion</p>
- *
- * <p>Copyright: Copyright (c) 2005</p>
- *
- * <p>Company: Recruitmax Software</p>
  *
  * @author Jeff L Greenwell
  * @version 1.0
@@ -15,11 +9,11 @@ package com.recruitmax.security.securemax.v1_0;
 
 import java.util.regex.*;
 import java.io.UnsupportedEncodingException;
-import com.recruitmax.security.securemax.v1_0.smBase64;
-import com.recruitmax.security.securemax.v1_0.smCRC32;
-import com.recruitmax.security.securemax.v1_0.smHexTrig;
-import com.recruitmax.security.securemax.v1_0.smUtils;
-import com.recruitmax.security.securemax.v1_0.smThreader;
+import com.thixo.security.securemax.smBase64;
+import com.thixo.security.securemax.smCRC32;
+import com.thixo.security.securemax.smHexTrig;
+import com.thixo.security.securemax.smUtils;
+import com.thixo.security.securemax.smThreader;
 
 public class smPageProcessor {
     private static final Pattern PageLinkPattern = Pattern.compile("(\"|')([\\S]*)\\.cfm\\?([^/!\"']*?)\\1(?![\\s]*\\+)", Pattern.CASE_INSENSITIVE | Pattern.DOTALL | Pattern.MULTILINE | Pattern.UNICODE_CASE);

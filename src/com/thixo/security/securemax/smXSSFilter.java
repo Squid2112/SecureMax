@@ -1,13 +1,7 @@
-package com.recruitmax.security.securemax.v1_0;
+package com.thixo.security.securemax;
 
 /**
  * <p>Title: Squid Security Systems</p>
- *
- * <p>Description: Ultimate Java Security for ColdFusion</p>
- *
- * <p>Copyright: Copyright (c) 2005</p>
- *
- * <p>Company: Recruitmax Software</p>
  *
  * @author Jeff L Greenwell
  * @version 1.0

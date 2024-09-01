@@ -1,18 +1,7 @@
 package com.thixo.security.securemax;
 
 /**
- * <p>
- * Title: Squid Security Systems
- * </p>
- *
- * <p>
- * Description: Ultimate Java Security for ColdFusion
- * </p>
- *
- * <p>
- * Copyright: Copyright (c) 2005
- * </p>
- *
+ * <p>Title: Squid Security Systems</p>
  * @author Jeff L Greenwell
  * @version 1.0
  */

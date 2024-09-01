@@ -2,20 +2,13 @@ package com.thixo.security.securemax;
 
 /**
  * <p>Title: Squid Security Systems</p>
- *
- * <p>Description: Ultimate Java Security for ColdFusion</p>
- *
- * <p>Copyright: Copyright (c) 2005</p>
- *
- * <p>Company: Recruitmax Software</p>
- *
  * @author Jeff L Greenwell
  * @version 1.0
  */
 
 import java.io.UnsupportedEncodingException;
 import java.io.ByteArrayOutputStream;
-import com.recruitmax.security.securemax.v1_0.smErrors;
+import com.thixo.security.securemax.smErrors;
 
 public class smCipher {
 	private static smCipherKey key = new smCipherKey();

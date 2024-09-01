@@ -2,18 +2,13 @@ package com.thixo.security.securemax;
 
 /**
  * <p>Title: Squid Security Systems</p>
- *
- * <p>Description: Ultimate Java Security for ColdFusion</p>
- *
- * <p>Copyright: Copyright (c) 2005</p>
- *
  * @author Jeff L Greenwell
  * @version 1.0
  */
 
 import java.util.zip.CRC32;
 import java.io.UnsupportedEncodingException;
-import com.recruitmax.security.securemax.v1_0.smBase64;
+import com.thixo.security.securemax.smBase64;
 
 public class smCRC32 {
 	private CRC32 intCRC32;
