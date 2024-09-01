@@ -27,8 +27,8 @@ public class smCRC32 {
 	public String toHexTrig(byte[] inData) {
 		intCRC32.reset();
 		intCRC32.update(inData);
-		int tRaw = (int) intCRC32.getValue();
-		return padLeft(Integer.toString(tRaw, 36).toUpperCase(), 6, '0');
+		long tRaw = intCRC32.getValue() & 0xFFFFFFFFL; // Convert to unsigned 32-bit value
+		return padLeft(Long.toString(tRaw, 36).toUpperCase(), 6, '0');
 	}
 
 	public String toHexTrig(String inData) {
@@ -70,10 +70,14 @@ public class smCRC32 {
 	}
 
 	private String padLeft(String input, int length, char padChar) {
-		StringBuilder sb = new StringBuilder(input);
-		while (sb.length() < length) {
-			sb.insert(0, padChar);
+		if (input.length() >= length)
+			return input;
+		StringBuilder sb = new StringBuilder(length);
+		while (sb.length() < length - input.length()) {
+			sb.append(padChar);
 		}
+		sb.append(input);
 		return sb.toString();
 	}
+
 }

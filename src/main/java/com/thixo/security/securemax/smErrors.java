@@ -17,7 +17,6 @@ public class smErrors {
     }
 
     public void Reset() {
-        int i = 0;
         while (!ErrorList.isEmpty())
             ErrorList.remove(0);
     }

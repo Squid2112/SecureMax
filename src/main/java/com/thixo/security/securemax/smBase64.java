@@ -37,19 +37,25 @@ public class smBase64 {
 
 	public static char[] encode(byte[] in) {
 		int iLen = in.length;
+		int oDataLen = (iLen * 4 + 2) / 3;
 		int oLen = ((iLen + 2) / 3) * 4;
 		char[] out = new char[oLen];
-		int ip = 0, op = 0;
-
+		int ip = 0;
+		int op = 0;
 		while (ip < iLen) {
 			int i0 = in[ip++] & 0xff;
 			int i1 = ip < iLen ? in[ip++] & 0xff : 0;
 			int i2 = ip < iLen ? in[ip++] & 0xff : 0;
-
-			out[op++] = MAP1[i0 >>> 2];
-			out[op++] = MAP1[((i0 & 3) << 4) | (i1 >>> 4)];
-			out[op++] = op < oLen ? MAP1[((i1 & 0xf) << 2) | (i2 >>> 6)] : '=';
-			out[op++] = op < oLen ? MAP1[i2 & 0x3F] : '=';
+			int o0 = i0 >>> 2;
+			int o1 = ((i0 & 3) << 4) | (i1 >>> 4);
+			int o2 = ((i1 & 0xf) << 2) | (i2 >>> 6);
+			int o3 = i2 & 0x3F;
+			out[op++] = MAP1[o0];
+			out[op++] = MAP1[o1];
+			out[op] = op < oDataLen ? MAP1[o2] : '=';
+			op++;
+			out[op] = op < oDataLen ? MAP1[o3] : '=';
+			op++;
 		}
 		return out;
 	}
