@@ -6,15 +6,14 @@ package com.thixo.security.securemax;
  * @version 1.0
  */
 
-import com.thixo.security.securemax.smErrorElement;
 import java.util.ArrayList;
 
 public class smErrors {
 
-    protected ArrayList ErrorList;
+    protected ArrayList<smErrorElement> ErrorList;
 
     public smErrors() {
-        this.ErrorList = new ArrayList();
+        this.ErrorList = new ArrayList<smErrorElement>();
     }
 
     public void Reset() {
