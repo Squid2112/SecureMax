@@ -3,6 +3,15 @@ package com.thixo.security.securemax;
 import java.nio.charset.StandardCharsets;
 import java.util.zip.CRC32;
 
+/**
+ * <p>
+ * Title: Squid Security Systems
+ * </p>
+ * 
+ * @author Jeff L Greenwell
+ * @version 1.0
+ */
+
 public class smCRC32 {
 	private final CRC32 intCRC32;
 	private String smEncodingType;

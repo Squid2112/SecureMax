@@ -8,6 +8,15 @@ import java.security.spec.InvalidKeySpecException;
 import java.util.Base64;
 import java.security.spec.*;
 
+/**
+ * <p>
+ * Title: Squid Security Systems
+ * </p>
+ * 
+ * @author Jeff L Greenwell
+ * @version 1.0
+ */
+
 public class smDESencrypt {
 
     private Cipher ecipher;

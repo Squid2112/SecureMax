@@ -9,6 +9,7 @@ import java.security.SecureRandom;
  * 
  * @version 1.0
  */
+
 public class smCipherKey {
 
 	private final SecureRandom oRandom;

@@ -4,6 +4,15 @@ import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
+/**
+ * <p>
+ * Title: Squid Security Systems
+ * </p>
+ * 
+ * @author Jeff L Greenwell
+ * @version 1.0
+ */
+
 public class smHexTrig {
 
 	private String smEncodingType;

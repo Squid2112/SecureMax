@@ -7,6 +7,7 @@ package com.thixo.security.securemax;
  * 
  * @version 1.0
  */
+
 public class smUtils {
 
 	private smUtils() {

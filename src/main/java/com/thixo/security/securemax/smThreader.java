@@ -1,8 +1,16 @@
 package com.thixo.security.securemax;
 
 import java.security.SecureRandom;
-import com.thixo.security.securemax.smHexTrig;
 import java.io.UnsupportedEncodingException;
+
+/**
+ * <p>
+ * Title: Squid Security Systems
+ * </p>
+ * 
+ * @author Jeff L Greenwell
+ * @version 1.0
+ */
 
 public class smThreader {
 
