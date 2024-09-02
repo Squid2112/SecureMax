@@ -29,16 +29,6 @@ public class smCipher {
 		return this;
 	}
 
-	public static void main(String[] args) {
-		smCipher test = new smCipher();
-		String tStr = "This is a really good test of this stuff, but I would like to also try this with some binary data";
-		byte[] crypt = test.EncipherData(tStr.getBytes(StandardCharsets.UTF_8));
-		byte[] drypt = test.DecipherData(crypt);
-		String aTest = new String(drypt, StandardCharsets.UTF_8);
-		System.out.println(new String(crypt, StandardCharsets.ISO_8859_1)); // Changed encoding to properly display bytes
-		System.out.println(smUtils.Trim00(aTest));
-	}
-
 	public long[] Encipher(long p1, long p2) {
 		long v1 = p1, v2 = p2;
 		long delta = 0x9E3779B9L;
